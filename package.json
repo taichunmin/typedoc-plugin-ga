@@ -1,0 +1,29 @@
+{
+  "name": "typedoc-plugin-ga",
+  "version": "0.0.1",
+  "description": "A plugin for Typedoc to add Google Analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typedoc",
+    "typedoc-plugin",
+    "ga"
+  ],
+  "author": "Eugenio Vinicio Berretta <euberdeveloper@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@euberdeveloper/eslint-plugin": "^2.7.0",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "dotenv-cli": "^7.4.2",
+    "dts-bundle-generator": "^9.5.1",
+    "esbuild": "^0.23.0",
+    "release-it": "^17.6.0",
+    "shx": "^0.3.4",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "typedoc": "^0.26.5"
+  }
+}
