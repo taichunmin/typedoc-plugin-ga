@@ -2,4 +2,3 @@ node_modules
 dist
 bundled
 .env
-docs/documentation

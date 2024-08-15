@@ -1,0 +1,9 @@
+{
+    "exclude": [ 
+        "/node_modules",
+        "/.git",
+        "/bundled/",
+        "/dist/",
+        "/docs/documentation/"
+    ]
+}
