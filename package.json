@@ -5,7 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "shx rm -rf dist bundled",
+    "pretranspile": "pnpm clean",
+    "transpile": "tsc -p source",
+    "bundle:esm": "node build.mjs",
+    "bundle:dts": "dts-bundle-generator -o bundled/lib/commonjs/index.d.ts --project source/tsconfig.json source/index.ts",
+    "postbundle:dts": "cp bundled/lib/commonjs/index.d.ts bundled/lib/esm/index.d.ts",
+    "prebundle": "pnpm clean",
+    "bundle": "pnpm bundle:esm && pnpm bundle:dts",
+    "lint": "eslint source --ext ts --format codeframe",
+    "lint:fix": "eslint source --ext ts --format codeframe --fix",
+    "release": "dotenv release-it"
   },
   "keywords": [
     "typedoc",
