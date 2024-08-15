@@ -35,6 +35,7 @@
   "devDependencies": {
     "@euberdeveloper/eslint-plugin": "^2.7.0",
     "@release-it/conventional-changelog": "^8.0.1",
+    "@types/node": "^22.3.0",
     "dotenv-cli": "^7.4.2",
     "dts-bundle-generator": "^9.5.1",
     "esbuild": "^0.23.0",
