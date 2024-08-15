@@ -1,6 +1,6 @@
 {
   "name": "typedoc-plugin-ga",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A plugin for Typedoc to add Google Analytics",
   "types": "./bundled/lib/commonjs/index.d.ts",
   "main": "./bundled/lib/commonjs/index.js",
