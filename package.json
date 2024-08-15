@@ -2,8 +2,29 @@
   "name": "typedoc-plugin-ga",
   "version": "0.1.0",
   "description": "A plugin for Typedoc to add Google Analytics",
-  "main": "index.js",
+  "types": "./bundled/lib/commonjs/index.d.ts",
+  "main": "./bundled/lib/commonjs/index.js",
+  "module": "./bundled/lib/esm/index.esm.js",
+  "exports": {
+    ".": {
+      "require": {
+        "default": "./bundled/lib/commonjs/index.js",
+        "types": "./bundled/lib/commonjs/index.d.ts"
+      },
+      "import": {
+        "default": "./bundled/lib/esm/index.esm.js",
+        "types": "./bundled/lib/esm/index.d.ts"
+      }
+    }
+  },
   "type": "module",
+  "files": [
+    "package.json",
+    "bundled",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "clean": "shx rm -rf dist bundled",
     "pretranspile": "pnpm clean",
