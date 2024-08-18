@@ -1,5 +1,12 @@
 
 
+## [1.0.2](https://github.com/euberdeveloper/typedoc-plugin-ga/compare/1.0.1...1.0.2) (2024-08-18)
+
+
+### Bug Fixes
+
+* **deps:** use typedoc as a dev dep, to avoid conflicts ([858d33a](https://github.com/euberdeveloper/typedoc-plugin-ga/commit/858d33a7a9773ddc369878196b5fc05ca6e964a7))
+
 ## [1.0.1](https://github.com/euberdeveloper/typedoc-plugin-ga/compare/0.1.1...1.0.1) (2024-08-15)
 
 ## [0.1.1](https://github.com/euberdeveloper/typedoc-plugin-ga/compare/0.1.0...0.1.1) (2024-08-15)
