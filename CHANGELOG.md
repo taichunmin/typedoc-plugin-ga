@@ -1,5 +1,12 @@
 
 
+## [1.0.3](https://github.com/euberdeveloper/typedoc-plugin-ga/compare/1.0.2...1.0.3) (2024-08-19)
+
+
+### Bug Fixes
+
+* **esbuild:** ignore dev deps in esbuild config ([e51885d](https://github.com/euberdeveloper/typedoc-plugin-ga/commit/e51885d8d748f0eaee0cf605f1e2a1516cb3a02d))
+
 ## [1.0.2](https://github.com/euberdeveloper/typedoc-plugin-ga/compare/1.0.1...1.0.2) (2024-08-18)
 
 
