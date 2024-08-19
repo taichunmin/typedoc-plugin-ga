@@ -5,8 +5,9 @@ import packageJson from './package.json' assert { type: 'json' };
 
 function getExternalDependencies(allow = []) {
     const deps = packageJson.dependencies ? Object.keys(packageJson.dependencies).filter(dep => !allow.includes(dep)) : [];
+    const devDeps = packageJson.devDependencies ? Object.keys(packageJson.devDependencies).filter(dep => !allow.includes(dep)) : [];
     const peerDeps = packageJson.peerDependencies ? Object.keys(packageJson.peerDependencies).filter(dep => !allow.includes(dep)) : [];
-    return [...deps, ...peerDeps];
+    return [...deps, ...devDeps, ...peerDeps];
 }
 
 async function buildModule() {
