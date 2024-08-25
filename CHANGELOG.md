@@ -1,5 +1,7 @@
 
 
+## [1.0.4](https://github.com/euberdeveloper/typedoc-plugin-ga/compare/1.0.3...1.0.4) (2024-08-25)
+
 ## [1.0.3](https://github.com/euberdeveloper/typedoc-plugin-ga/compare/1.0.2...1.0.3) (2024-08-19)
 
 
