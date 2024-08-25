@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      typedoc:
+        specifier: ^0.26.5
+        version: 0.26.5(typescript@5.5.4)
     devDependencies:
       '@euberdeveloper/eslint-plugin':
         specifier: ^2.7.0
@@ -32,9 +36,6 @@ importers:
       shx:
         specifier: ^0.3.4
         version: 0.3.4
-      typedoc:
-        specifier: ^0.26.5
-        version: 0.26.5(typescript@5.5.4)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
