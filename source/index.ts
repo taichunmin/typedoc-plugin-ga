@@ -1,10 +1,10 @@
-import typedoc, { type Application } from 'typedoc';
+import { type Application, JSX, ParameterType } from 'typedoc';
 
 function addGaOptionParameter(app: Application): void {
     app.options.addDeclaration({
         name: 'gaID',
         help: 'Set the Google Analytics tracking ID and activate tracking code',
-        type: typedoc.ParameterType.String
+        type: ParameterType.String
     });
 }
 
@@ -18,15 +18,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${gaID}');
 `.trim();
-            return typedoc.JSX.createElement(typedoc.JSX.Fragment, null, [
-                typedoc.JSX.createElement('script', {
+            return JSX.createElement(JSX.Fragment, null, [
+                JSX.createElement('script', {
                     async: true,
                     src: `https://www.googletagmanager.com/gtag/js?id=${gaID}`
                 }),
-                typedoc.JSX.createElement('script', null, typedoc.JSX.createElement(typedoc.JSX.Raw, { html: script }))
+                JSX.createElement('script', null, JSX.createElement(JSX.Raw, { html: script }))
             ]);
         }
-        return typedoc.JSX.createElement(typedoc.JSX.Fragment, null);
+        return JSX.createElement(JSX.Fragment, null);
     });
 }
 
